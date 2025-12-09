@@ -1,0 +1,48 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 1px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .app-layout {
+    grid-template-columns: 1fr 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  
+  .side-column {
+    max-height: 300px;
+    flex-direction: row;
+  }
+}
+
