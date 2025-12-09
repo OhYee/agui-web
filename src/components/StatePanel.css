@@ -77,7 +77,7 @@
   font-family: var(--font-mono);
   color: var(--accent-cyan);
   overflow-x: auto;
-  max-height: 200px;
+  max-height: 500px;
   overflow-y: auto;
 }
 

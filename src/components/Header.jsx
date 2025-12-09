@@ -28,12 +28,12 @@ export default function Header() {
           Documentation
         </a>
         <a 
-          href="https://github.com/ag-ui-protocol/ag-ui" 
+          href="https://github.com/OhYee/agui-web" 
           target="_blank" 
           rel="noopener noreferrer"
           className="header-link"
         >
-          GitHub
+          Repository
         </a>
       </div>
     </header>
